@@ -1,6 +1,6 @@
 {
-    "name": "package-name",
-    "author": "authorName",
+    "name": "@op-ent/unstyled-ui-theme",
+    "author": "Florian LEFEBVRE",
     "version": "0.0.1",
     "license": "MIT",
     "main": "dist/index.js",
