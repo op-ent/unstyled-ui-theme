@@ -1,1 +1,3 @@
-export const sum = (a: number, b: number) => a + b
+export { theme } from './theme'
+export { withUIT } from './with-uit'
+import './colors.css'
