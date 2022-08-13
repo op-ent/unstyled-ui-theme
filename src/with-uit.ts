@@ -102,7 +102,7 @@ const colors = (function () {
     const output: Record<string, Record<number, string>> = {}
 
     function hsl(str: string) {
-        return `hsl(${str}, <alpha-value>))`
+        return `hsl(${str}, <alpha-value>)`
     }
 
     // auto
