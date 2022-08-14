@@ -95,10 +95,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@op-ent/unstyled-ui@^0.1.1-0":
-  version "0.1.1-0"
-  resolved "https://registry.npmjs.org/@op-ent/unstyled-ui/-/unstyled-ui-0.1.1-0.tgz#0f8ccc73e9d863a4c5815dd8823084e41eed923f"
-  integrity sha512-PAZAO2Hx0j3Fq+2uojfuIz8RIqjHunCHronWObrl8elu4ZstHBEt6cjVeWwn6R3rVJw/ZkGfhicwsIOHgQJKTA==
+"@op-ent/unstyled-ui@0.1.1-1":
+  version "0.1.1-1"
+  resolved "https://registry.npmjs.org/@op-ent/unstyled-ui/-/unstyled-ui-0.1.1-1.tgz#ea60f6dbf8a37c56b9c1f366ba1a3bba52244246"
+  integrity sha512-EJK1AAhR77c2HCGxdBcdA5DWOGJ46Yei5rQnKtJRaRBVVbWOLwqfiaEIb3FhHUN+ckmEEcNa5IB6nD8hdKeMRg==
   dependencies:
     clsx "^1.2.1"
     defu "^6.0.0"
@@ -2401,6 +2401,11 @@ tree-kill@^1.2.2:
   version "1.2.2"
   resolved "https://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
+
+ts-essentials@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.npmjs.org/ts-essentials/-/ts-essentials-9.2.0.tgz#a6ec69b43d111f107b3e63e27b200d2d22542b55"
+  integrity sha512-HLl+am6q+ulOWcjUFghpIQXXyaH0hVTnFTVWNqwz1iDxyN+t+lwDfqPB5FmPUTFw3J+y26UR3hNGmK/1jehokA==
 
 ts-interface-checker@^0.1.9:
   version "0.1.13"

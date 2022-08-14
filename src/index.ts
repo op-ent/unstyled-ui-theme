@@ -1,3 +1,3 @@
 export { theme } from './theme'
-export { withUIT } from './with-uit'
+export { withTheme } from './with-theme'
 import './colors.css'

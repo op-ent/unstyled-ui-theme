@@ -1,6 +1,6 @@
 import { describe, it } from 'vitest'
 
-describe('withUIT', () => {
+describe('withTheme', () => {
     it('should run', () => {
         return
     })

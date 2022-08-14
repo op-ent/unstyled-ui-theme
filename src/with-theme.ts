@@ -105,11 +105,17 @@ const colors = (function () {
         return `hsl(${str}, <alpha-value>)`
     }
 
+    const PREFIX = 'uuit'
+
+    function colorValue(color: string, scale: number, variant: string) {
+        return hsl(`var(--${PREFIX}-${color}-${variant}-${scale})`)
+    }
+
     // auto
     for (const color of _colors) {
         const map: Record<number, string> = {}
         for (let i = 1; i <= 12; i++) {
-            map[i] = hsl(`var(--uit-${color}-auto-${i})`)
+            map[i] = colorValue(color, i, 'auto')
         }
         output[color] = map
     }
@@ -118,7 +124,7 @@ const colors = (function () {
     for (const color of _colors) {
         const map: Record<number, string> = {}
         for (let i = 1; i <= 12; i++) {
-            map[i] = hsl(`var(--uit-${color}-light-${i})`)
+            map[i] = colorValue(color, i, 'light')
         }
         output[`${color}Light`] = map
     }
@@ -127,7 +133,7 @@ const colors = (function () {
     for (const color of _colors) {
         const map: Record<number, string> = {}
         for (let i = 1; i <= 12; i++) {
-            map[i] = hsl(`var(--uit-${color}-dark-${i})`)
+            map[i] = colorValue(color, i, 'dark')
         }
         output[`${color}Dark`] = map
     }
@@ -142,16 +148,23 @@ const colors = (function () {
 
 const unstyledUiConfig: Config = {
     darkMode: 'class',
-    content: ['./node-modules/@op-ent/unstyled-ui-theme/index.{js,mjs}'],
+    content: ['./node-modules/@op-ent/unstyled-ui-theme/dist/index.js'],
     theme: {
-        colors,
+        colors: {
+            ...colors,
+            inherit: 'inherit',
+            current: 'currentColor',
+            transparent: 'transparent',
+            black: '#000',
+            white: '#fff',
+        },
         fontFamily: {
             sans: ['Space Grotesk', 'sans-serif'],
         },
     },
 }
 
-export const withUIT = (tailwindConfig: Config): Config => {
+export const withTheme = (tailwindConfig: Config): Config => {
     const themeFont = unstyledUiConfig.theme?.fontFamily as { sans: string[] }
     const tailwindFont = tailwindConfig.theme?.fontFamily as { sans?: string[] }
 
