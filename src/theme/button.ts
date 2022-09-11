@@ -5,7 +5,7 @@ export const button: DeepPartial<Theme['button']> = {
     styles: {
         base: {
             initial:
-                'inline-flex items-center border border-transparent rounded-md focus:outline-none focus:ring transition-colors',
+                'inline-flex items-center border border-transparent rounded-md focus:outline-none focus:ring transition-colors focus:z-10',
         },
         sizes: {
             sm: 'px-3 py-2 text-sm leading-4',

@@ -5,7 +5,7 @@ export const buttonGroup: DeepPartial<Theme['buttonGroup']> = {
     styles: {
         base: {
             initial:
-                '[&>*:not(:first-child):not(:last-child)]:rounded-none [&>*:first-child]:rounded-r-none [&>*:last-child]:rounded-l-none',
+                '[&>*:not(:first-child):not(:last-child)]:rounded-none [&>*:first-child]:rounded-r-none [&>*:last-child]:rounded-l-none inline-flex',
         },
         variants: {
             solid: {
