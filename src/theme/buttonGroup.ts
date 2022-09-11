@@ -1,7 +1,11 @@
 import { Theme } from '@op-ent/unstyled-ui'
 import { DeepPartial } from 'ts-essentials'
+import { button } from './button'
 
 export const buttonGroup: DeepPartial<Theme['buttonGroup']> = {
+    defaultProps: {
+        buttonProps: button.defaultProps,
+    },
     styles: {
         base: {
             initial:

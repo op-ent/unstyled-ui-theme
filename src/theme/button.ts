@@ -2,6 +2,11 @@ import { Theme } from '@op-ent/unstyled-ui'
 import { DeepPartial } from 'ts-essentials'
 
 export const button: DeepPartial<Theme['button']> = {
+    defaultProps: {
+        variant: 'solid',
+        size: 'md',
+        color: 'neutral',
+    },
     styles: {
         base: {
             initial:
