@@ -95,10 +95,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@op-ent/unstyled-ui@0.1.1-1":
-  version "0.1.1-1"
-  resolved "https://registry.npmjs.org/@op-ent/unstyled-ui/-/unstyled-ui-0.1.1-1.tgz#ea60f6dbf8a37c56b9c1f366ba1a3bba52244246"
-  integrity sha512-EJK1AAhR77c2HCGxdBcdA5DWOGJ46Yei5rQnKtJRaRBVVbWOLwqfiaEIb3FhHUN+ckmEEcNa5IB6nD8hdKeMRg==
+"@op-ent/unstyled-ui@0.1.1-2":
+  version "0.1.1-2"
+  resolved "https://registry.npmjs.org/@op-ent/unstyled-ui/-/unstyled-ui-0.1.1-2.tgz#cddaca6d3453c391c3fe0353d1d7f81c05cf8061"
+  integrity sha512-E7g0pQq86ZP6Jcf13cWWlw5m3sX/evJuQF1olI/aMrIGftFZ40oOhdQOqN9cH1Ege2c8P//I49/m+cnPXwQ4ag==
   dependencies:
     clsx "^1.2.1"
     defu "^6.0.0"
