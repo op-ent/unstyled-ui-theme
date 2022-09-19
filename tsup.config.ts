@@ -9,4 +9,5 @@ export default defineConfig({
     format: ['esm', 'cjs'],
     minify: true,
     treeshake: true,
+    onSuccess: 'yarn copy public/* dist',
 })
