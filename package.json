@@ -27,6 +27,9 @@
         "lint",
         "test"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "dev": "tsup --watch \"src/**/*.{js,ts}\"",
         "build": "tsup",
