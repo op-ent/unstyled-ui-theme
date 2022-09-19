@@ -1,5 +1,4 @@
-import { Theme } from '@op-ent/unstyled-ui'
-import { DeepPartial } from 'ts-essentials'
+import { createTheme } from '@op-ent/unstyled-ui'
 import { button } from './theme/button'
 import { buttonGroup } from './theme/buttonGroup'
 
@@ -24,7 +23,7 @@ declare module '@op-ent/unstyled-ui' {
     }
 }
 
-export const theme: DeepPartial<Theme> = {
+export const { theme, extendTheme } = createTheme({
     button,
     buttonGroup,
-}
+})

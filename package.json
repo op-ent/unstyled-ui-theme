@@ -55,10 +55,11 @@
         "ts-essentials": "^9.2.0",
         "tsup": "^6.2.0",
         "typescript": "^4.7.4",
-        "vitest": "^0.19.1"
+        "vitest": "^0.19.1",
+        "npm:publish": "np"
     },
     "dependencies": {
-        "@op-ent/unstyled-ui": "0.1.1-4",
+        "@op-ent/unstyled-ui": "0.1.1-6",
         "defu": "^6.0.0",
         "tailwindcss": "^3.1.8"
     }
