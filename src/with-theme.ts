@@ -6,7 +6,10 @@ const colors = generateColors(classicColors)
 
 const unstyledUiConfig: Config = {
     darkMode: 'class',
-    content: ['./node_modules/@op-ent/unstyled-ui-theme/dist/index.js'],
+    content: [
+        './node_modules/@op-ent/unstyled-ui-theme/dist/index.js',
+        './node_modules/@op-ent/unstyled-ui/dist/index.js',
+    ],
     theme: {
         colors: {
             ...colors,
